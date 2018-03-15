@@ -1,0 +1,15 @@
+$(".btn_link.S_txt1").click(); // 进入“批量管理”
+
+// 选中全部
+var lis = $(".member_li.S_bg1").parentNode.childNodes;
+for(var i=0;i<lis.length;i++){
+    lis[i].className = "member_li S_bg1 choosed S_link1_br";
+}
+
+// 为了让“取消关注”可点击
+$(".member_li.S_bg1").click();
+$(".member_li.S_bg1").click();
+
+
+$(".W_btn_a[node-type='cancelFollowBtn']").click(); // 取消关注
+$(".W_btn_a.btn_34px[node-type='ok']").click(); // 确定
